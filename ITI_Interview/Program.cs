@@ -26,11 +26,7 @@ internal class Program
         var department = new Department
         {
             Id = 101,
-<<<<<<< HEAD
-            Name = "MM"  
-=======
             Name = "CS"  
->>>>>>> feature
         };
 
         Console.WriteLine("Department Details: Id={0}, Name={1}", department.Id, department.Name);
