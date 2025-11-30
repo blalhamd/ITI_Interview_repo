@@ -19,6 +19,16 @@ internal class Program
 
         Console.WriteLine("Employee Details: Id={0}, Name={1}, Salary={2} egy", employee.Id, employee.Name, employee.Salary);
 
+
+        var department = new Department
+        {
+            Id = 101,
+            Name = "IT"  
+        };
+
+        Console.WriteLine("Department Details: Id={0}, Name={1}", department.Id, department.Name);
+
+
         Console.ReadKey();
     }
 }
