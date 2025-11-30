@@ -26,7 +26,7 @@ internal class Program
         var department = new Department
         {
             Id = 101,
-            Name = "IT"  
+            Name = "MM"  
         };
 
         Console.WriteLine("Department Details: Id={0}, Name={1}", department.Id, department.Name);
