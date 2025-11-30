@@ -20,7 +20,7 @@ internal class Program
             DepartmentId = 101
         };
 
-        Console.WriteLine("Employee Details: Id={0}, Name={1}, Salary={2} egy", employee.Id, employee.Name, employee.Salary);
+        Console.WriteLine("Employee Details: Id={0}, Name={1}, Salary={2} egy, DepartmentId={3}", employee.Id, employee.Name, employee.Salary,employee.DepartmentId);
 
         // create department object
         var department = new Department
