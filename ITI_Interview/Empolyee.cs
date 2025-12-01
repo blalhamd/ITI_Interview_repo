@@ -56,7 +56,7 @@
 
         public override string ToString()
         {
-            return $"Employee Details: Id={Id}, Name={Name}, Salary={Salary} egy, DepartmentId={DepartmentId}";
+            return string.Format("Employee Details: Id={0}, Name={1}, Salary={2} egy, DepartmentId={3}", Id, Name, Salary, DepartmentId);
         }
 
     }
