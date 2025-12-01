@@ -11,7 +11,7 @@ internal class Program
 
         // create department object
         var department = new Department(101, "MM");
-        Console.WriteLine("\nDepartment Details: Id={0}, Name={1}\n", department.Id, department.Name);
+        Console.WriteLine(department);
 
 
         Console.ReadKey();

@@ -12,31 +12,30 @@
             SetName(name);
         }
 
-        public void SetId(int id)
+        private void SetId(int id)
         {
             if (id <= 0)
-            {
                 throw new ArgumentException("Id must be greater than zero.");
-            }
             Id = id;
         }
 
         public void SetName(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-            {
                 throw new ArgumentException("Name cannot be null or empty.");
-            }
             Name = name;
         }
 
         public void AddEmpolyee(Empolyee empolyee)
         {
             if (empolyee == null)
-            {
                 throw new ArgumentNullException(nameof(empolyee), "Empolyee cannot be null.");
-            }
             Empolyees.Add(empolyee);
+        }
+
+        public override string ToString()
+        {
+            return string.Format("\nDepartment Details: Id={0}, Name={1}\n", Id, Name);
         }
     }
 }
