@@ -10,8 +10,8 @@ internal class Program
         Console.WriteLine(employee);
 
         // create department object
-        var department = new Department(101, "MM");
-        Console.WriteLine("\nDepartment Details: Id={0}, Name={1}\n", department.Id, department.Name);
+        var department = new Department(101, "CS");
+        Console.WriteLine(department);
 
 
         Console.ReadKey();
