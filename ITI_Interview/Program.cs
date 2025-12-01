@@ -10,7 +10,7 @@ internal class Program
         Console.WriteLine(employee);
 
         // create department object
-        var department = new Department(101, "MM");
+        var department = new Department(101, "CS");
         Console.WriteLine(department);
 
 
