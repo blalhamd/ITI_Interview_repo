@@ -10,7 +10,7 @@ public class Program
         Console.WriteLine(employee.ToString());
 
         // create department object
-        var department = new Department(101, "CS");
+        var department = new Department(101, "IT02");
         Console.WriteLine(department.ToString());
 
 
