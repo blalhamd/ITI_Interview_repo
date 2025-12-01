@@ -1,7 +1,7 @@
 ﻿
 using ITI_Interview;
 
-internal class Program
+public class Program
 {
     private static void Main(string[] args)
     {
