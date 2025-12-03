@@ -1,4 +1,4 @@
-﻿namespace ITI_Interview
+﻿namespace ITI_Interview.Entities
 {
     public class Empolyee
     {
