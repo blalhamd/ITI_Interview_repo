@@ -5,7 +5,7 @@ public class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to our App!");
+        Console.WriteLine("Welcome to the Amazing App [Version 2.0]");
 
         // create employee object
         var employee = new Empolyee(1, "John Doe", 20000, 101);
