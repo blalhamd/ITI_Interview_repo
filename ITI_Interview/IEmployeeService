@@ -1,1 +1,8 @@
 
+namespace ITI_Interview
+{
+    public interface IEmpolyeeService
+    {
+
+    }
+}
