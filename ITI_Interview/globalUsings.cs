@@ -1,2 +1,2 @@
-﻿global using ITI_Interview;
- 
+﻿global using ITI_Interview.Entities;
+
