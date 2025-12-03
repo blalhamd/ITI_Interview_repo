@@ -7,7 +7,7 @@ public partial class Program
         Console.WriteLine(employee);
 
         // create department object
-        var department = new Department(101, "CS02");
+        var department = new Department(101, "CS");
         Console.WriteLine(department);
 
         // create manager object
