@@ -3,7 +3,7 @@ public partial class Program
     private static void Main(string[] args)
     {
         // create employee object
-        var employee = new Empolyee(1, "Mohamed Mahed", 20000, 101);
+        var employee = new Empolyee(1, "Mohamed Maher", 20000, 101);
         Console.WriteLine(employee);
 
         // create department object
