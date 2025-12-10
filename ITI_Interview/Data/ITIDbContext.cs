@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace ITI_Interview.Data
+﻿namespace ITI_Interview.Data
 {
     public class ITIDbContext : DbContext
     {
