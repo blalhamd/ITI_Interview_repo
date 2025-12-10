@@ -15,6 +15,9 @@ namespace ITI_Interview.Data
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.ApplyConfiguration(new EmpolyeeConfiguration());
+            modelBuilder.ApplyConfiguration(new ManagerConfiguration());
+            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
         }
     }
 }
