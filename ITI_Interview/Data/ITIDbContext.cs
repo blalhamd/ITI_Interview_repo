@@ -4,9 +4,10 @@ namespace ITI_Interview.Data
 {
     public class ITIDbContext : DbContext
     {
-        public DbSet<Empolyee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Empolyee> Employees { get; set; }
         public DbSet<Manager> Managers { get; set; }
+        
         public ITIDbContext(DbContextOptions<ITIDbContext> options) : base(options)
         {
         }
@@ -15,9 +16,7 @@ namespace ITI_Interview.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.ApplyConfiguration(new EmpolyeeConfiguration());
-            modelBuilder.ApplyConfiguration(new ManagerConfiguration());
-            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ITIDbContext).Assembly);
         }
     }
 }
