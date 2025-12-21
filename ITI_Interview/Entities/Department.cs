@@ -2,28 +2,24 @@
 {
     public class Department
     {
-        public int Id { get; private set; }
+        public Guid Id { get; private set; }
         public string Name { get; private set; } = null!;
         public ICollection<Empolyee> Empolyees { get; private set; } = new List<Empolyee>();
 
-        public Department(int id, string name)
+        private Department() { }
+
+        private Department(string name)
         {
-            SetId(id);
-            SetName(name);
+            Id = Guid.NewGuid();
+            Name = name;
         }
 
-        private void SetId(int id)
-        {
-            if (id <= 0)
-                throw new ArgumentException("Id must be greater than zero.");
-            Id = id;
-        }
-
-        public void SetName(string name)
+        public static Department Create(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException("Name cannot be null or empty.");
-            Name = name;
+
+            return new Department(name);
         }
 
         public void AddEmpolyee(Empolyee empolyee)
@@ -35,7 +31,7 @@
 
         public override string ToString()
         {
-            return string.Format("\nDepartment Details: Id={0}, Name={1}\n", Id, Name);
+            return string.Format("\nDepartment Details: Id={0}, Name={1}\n", Id.ToString().Substring(0,5), Name);
         }
     }
 }
