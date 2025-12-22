@@ -2,7 +2,7 @@
 {
     public class Department
     {
-        public Guid Id { get; private set; }
+        public Guid DepartmentId { get; private set; }
         public string Name { get; private set; } = null!;
         public ICollection<Empolyee> Empolyees { get; private set; } = new List<Empolyee>();
 
@@ -10,7 +10,7 @@
 
         private Department(string name)
         {
-            Id = Guid.NewGuid();
+            DepartmentId = Guid.NewGuid();
             Name = name;
         }
 
@@ -31,7 +31,7 @@
 
         public override string ToString()
         {
-            return string.Format("\nDepartment Details: Id={0}, Name={1}\n", Id.ToString().Substring(0,5), Name);
+            return string.Format("\nDepartment Details: Id={0}, Name={1}\n", DepartmentId.ToString().Substring(0,5), Name);
         }
     }
 }
