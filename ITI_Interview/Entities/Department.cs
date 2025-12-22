@@ -28,8 +28,8 @@
 
         public void AddEmpolyee(Empolyee empolyee)
         {
-            if (empolyee == null)
-                throw new ArgumentNullException(nameof(empolyee), "Empolyee cannot be null.");
+            if (empolyee is null)
+                throw new ArgumentNullException("Empolyee cannot be null.");
             Empolyees.Add(empolyee);
         }
 
