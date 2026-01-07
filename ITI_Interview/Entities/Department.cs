@@ -36,6 +36,14 @@
             Empolyees.Add(empolyee);
         }
 
+        public Department Update(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+              throw new ArgumentNullException("Department name cannot be null or empty.");
+            Name = name;
+            return this;
+        }
+
         public override string ToString()
         {
             return string.Format("\nDepartment Details: Id={0}, Name={1}\n", DepartmentId.ToString().Substring(0,5), Name);
