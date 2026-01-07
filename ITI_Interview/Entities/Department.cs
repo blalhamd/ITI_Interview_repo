@@ -16,16 +16,16 @@
 
         public static Department Create(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentNullException("Name cannot be null or empty.");
+            if (string.IsNullOrEmpty(name))
+                throw new ArgumentNullException("Department Name cannot be null or empty.");
 
             return new Department(name);
         }
 
         public Department Update(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentNullException("Name cannot be null or empty.");
+            if (string.IsNullOrEmpty(name))
+                throw new ArgumentNullException("Department Name cannot be null or empty.");
             Name = name;
             return this;
         }
