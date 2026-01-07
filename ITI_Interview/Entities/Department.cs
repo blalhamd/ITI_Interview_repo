@@ -22,6 +22,14 @@
             return new Department(name);
         }
 
+        public Department Update(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentNullException("Name cannot be null or empty.");
+            Name = name;
+            return this;
+        }
+
         public void AddEmpolyee(Empolyee empolyee)
         {
             if (empolyee is null)
